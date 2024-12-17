@@ -1,0 +1,97 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["strictUndefinedChecks"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                  Int              @id @default(autoincrement())
+  cognitoId           String           @unique
+  points              Int
+  email               String           @unique
+  dateOfBirth         DateTime
+  country             String
+  travelPreferenceId  Int
+  languageId          Int
+  loyaltyLevelId      Int
+  name                String
+  reservation         Reservation[] 
+  createdAt           DateTime         @default(now())  
+  updatedAt           DateTime         @updatedAt       
+  consentAccepted     Boolean          @default(false)  
+  consentTimestamp    DateTime?                         
+
+  travelPreference TravelPreference   @relation(fields: [travelPreferenceId], references: [id])
+  language          Language           @relation(fields: [languageId], references: [id])
+  loyaltyLevel      LoyaltyLevel       @relation(fields: [loyaltyLevelId], references: [id])
+}
+
+
+model TravelPreference {
+  id                   Int           @id @default(autoincrement())
+  preferenceName       String
+  
+  User User[]
+}
+
+model Language {
+  id                   Int           @id @default(autoincrement())
+  languageName         String
+  
+  User User[]
+}
+
+model LoyaltyLevel {
+  id                   Int           @id @default(autoincrement())
+  levelName            String
+  pointsRequirement    Int
+
+  User User[]
+  Benefit Benefit[]
+}
+
+model Benefit {
+  id                   Int           @id @default(autoincrement())
+  title                String
+  subtitle             String
+  loyaltyLevelId       Int
+
+  loyaltyLevel LoyaltyLevel @relation(fields: [loyaltyLevelId], references: [id])
+}
+
+model TypeRoom {
+  id                   Int           @id @default(autoincrement())
+  roomName             String
+
+  Reservation Reservation[]
+}
+
+model Reservation {
+  id                   Int           @id @default(autoincrement())
+  checkinDate          DateTime
+  checkoutDate         DateTime
+  points               Int
+  typeRoomId           Int
+  userCognitoId        String
+  nights               Int
+  createdAt            DateTime @default(now())  // Nuevo campo
+  updatedAt            DateTime @updatedAt 
+
+
+
+  typeRoom TypeRoom @relation(fields: [typeRoomId], references: [id])
+  user User @relation(fields: [userCognitoId], references: [cognitoId], onDelete: Cascade)
+
+  
+}
+

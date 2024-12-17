@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const clientsController_1 = require("../controllers/clientsController");
+const router = (0, express_1.Router)();
+router.get("/", clientsController_1.getUsers);
+router.post("/", clientsController_1.postUser);
+router.get("/getstatistics", clientsController_1.getUserStatistics);
+router.get("/getuser/:cognitoId", clientsController_1.getUserById);
+router.get("/getuserbyemailphone", clientsController_1.getUserByEmailOrPhone);
+router.patch("/edit/:cognitoId", clientsController_1.updateUserInfo);
+router.delete("/delete/:cognitoId", clientsController_1.deleteUser);
+exports.default = router;

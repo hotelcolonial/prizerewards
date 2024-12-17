@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const reservationController_1 = require("../controllers/reservationController");
+const router = (0, express_1.Router)();
+router.get("/", reservationController_1.getReservation);
+router.post("/", reservationController_1.createReservation);
+router.get("/:cognitoId/get", reservationController_1.getReservationsByUserId);
+router.delete("/delete/:reservationId", reservationController_1.deleteReservation);
+router.patch("/edit/:reservationId", reservationController_1.updateReservation);
+exports.default = router;

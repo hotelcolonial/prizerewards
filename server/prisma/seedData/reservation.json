@@ -1,0 +1,122 @@
+[
+  {
+    "checkinDate": "2024-11-01T00:00:00Z",
+    "checkoutDate": "2024-11-05T00:00:00Z",
+    "points": 200,
+    "typeRoomId": 1,
+    "userCognitoId": "vwx234",
+    "nights": 4
+  },
+  {
+    "checkinDate": "2024-12-10T00:00:00Z",
+    "checkoutDate": "2024-12-15T00:00:00Z",
+    "points": 500,
+    "typeRoomId": 2,
+    "userCognitoId": "abc123",
+    "nights": 5
+  },
+  {
+    "checkinDate": "2024-09-08T00:00:00Z",
+    "checkoutDate": "2024-09-12T00:00:00Z",
+    "points": 350,
+    "typeRoomId": 1,
+    "userCognitoId": "def456",
+    "nights": 4
+  },
+  {
+    "checkinDate": "2024-10-20T00:00:00Z",
+    "checkoutDate": "2024-10-25T00:00:00Z",
+    "points": 700,
+    "typeRoomId": 2,
+    "userCognitoId": "yzb567",
+    "nights": 5
+  },
+  {
+    "checkinDate": "2024-11-15T00:00:00Z",
+    "checkoutDate": "2024-11-18T00:00:00Z",
+    "points": 150,
+    "typeRoomId": 1,
+    "userCognitoId": "lok417",
+    "nights": 3
+  },
+  {
+    "checkinDate": "2024-12-01T00:00:00Z",
+    "checkoutDate": "2024-12-05T00:00:00Z",
+    "points": 400,
+    "typeRoomId": 2,
+    "userCognitoId": "cde890",
+    "nights": 4
+  },
+  {
+    "checkinDate": "2024-09-20T00:00:00Z",
+    "checkoutDate": "2024-09-23T00:00:00Z",
+    "points": 180,
+    "typeRoomId": 1,
+    "userCognitoId": "stu901",
+    "nights": 3
+  },
+  {
+    "checkinDate": "2024-10-12T00:00:00Z",
+    "checkoutDate": "2024-10-17T00:00:00Z",
+    "points": 600,
+    "typeRoomId": 2,
+    "userCognitoId": "vwx234",
+    "nights": 5
+  },
+  {
+    "checkinDate": "2024-08-25T00:00:00Z",
+    "checkoutDate": "2024-08-30T00:00:00Z",
+    "points": 400,
+    "typeRoomId": 2,
+    "userCognitoId": "ghi789",
+    "nights": 5
+  },
+  {
+    "checkinDate": "2024-09-15T00:00:00Z",
+    "checkoutDate": "2024-09-19T00:00:00Z",
+    "points": 250,
+    "typeRoomId": 1,
+    "userCognitoId": "ghi789",
+    "nights": 4
+  },
+  {
+    "checkinDate": "2024-12-01T00:00:00Z",
+    "checkoutDate": "2024-12-07T00:00:00Z",
+    "points": 700,
+    "typeRoomId": 2,
+    "userCognitoId": "lok417",
+    "nights": 6
+  },
+  {
+    "checkinDate": "2024-11-20T00:00:00Z",
+    "checkoutDate": "2024-11-24T00:00:00Z",
+    "points": 400,
+    "typeRoomId": 1,
+    "userCognitoId": "vwx234",
+    "nights": 4
+  },
+  {
+    "checkinDate": "2024-10-10T00:00:00Z",
+    "checkoutDate": "2024-10-13T00:00:00Z",
+    "points": 300,
+    "typeRoomId": 2,
+    "userCognitoId": "yzb567",
+    "nights": 3
+  },
+  {
+    "checkinDate": "2024-12-05T00:00:00Z",
+    "checkoutDate": "2024-12-10T00:00:00Z",
+    "points": 550,
+    "typeRoomId": 2,
+    "userCognitoId": "cde890",
+    "nights": 5
+  },
+  {
+    "checkinDate": "2024-10-18T00:00:00Z",
+    "checkoutDate": "2024-10-22T00:00:00Z",
+    "points": 350,
+    "typeRoomId": 1,
+    "userCognitoId": "cde890",
+    "nights": 4
+  }
+]

@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const benefitController_1 = require("../controllers/benefitController");
+const router = (0, express_1.Router)();
+router.get("/get/:levelId", benefitController_1.getBenefitsByLevelId);
+router.get("/getall", benefitController_1.getBenefits);
+router.post("/createbenefitbylevel/:levelId", benefitController_1.createBenefitByLevel);
+router.patch("/updatebenefit/:id", benefitController_1.updateBenefit);
+router.delete("/deletebenefit/:id", benefitController_1.deleteBenefit);
+exports.default = router;

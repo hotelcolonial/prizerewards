@@ -1,0 +1,5 @@
+[
+  { "levelName": "Bronze", "pointsRequirement": 0 },
+  { "levelName": "Prata", "pointsRequirement": 1000 },
+  { "levelName": "Ouro", "pointsRequirement": 2000 }
+]

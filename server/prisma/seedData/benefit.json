@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Desconto de 10%",
+    "subtitle": "Desconto em reservas",
+    "loyaltyLevelId": 1
+  },
+  {
+    "title": "Check-out Tardio",
+    "subtitle": "Check-out até as 14h",
+    "loyaltyLevelId": 1
+  },
+  {
+    "title": "Upgrade de Quarto",
+    "subtitle": "Upgrade gratuito",
+    "loyaltyLevelId": 2
+  },
+  {
+    "title": "Acesso ao Lounge",
+    "subtitle": "Acesso exclusivo ao lounge",
+    "loyaltyLevelId": 2
+  },
+  {
+    "title": "Transporte Aeroporto",
+    "subtitle": "Transporte gratuito",
+    "loyaltyLevelId": 3
+  },
+  {
+    "title": "Café da Manhã Grátis",
+    "subtitle": "Café da manhã incluso",
+    "loyaltyLevelId": 3
+  }
+]
